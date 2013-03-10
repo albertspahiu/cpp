@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double pesha, gjatesia, bmi;
+
+	cout << "Pesha e juaj ne kilogram: ";
+	cin >> pesha;
+
+	cout << "Gjatesia e juaj ne meter: ";
+	cin >> gjatesia;
+
+	bmi = pesha/(gjatesia*gjatesia);
+
+	if(bmi<=18.5) {
+
+	cout << "Pesha juaj eshte " << bmi << " dhe eshte nen normales" << endl;
+	}
+	else if((bmi>=18.5) && (bmi<=24.9))
+    {
+	cout << "Pesha juaj eshte " << bmi << " dhe eshte normale" << endl;
+    }
+    else if (bmi>30)
+    {
+    cout << "Obesitet" << endl;
+	}
+	return 0;
+}
