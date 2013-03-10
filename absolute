@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int numri, absolute;
+
+	cout << "Sheno nje integjer: ";
+	cin >> numri;
+	cout << endl;
+
+	absolute = numri;
+
+	if (numri < 0)
+		numri =- numri;
+
+	cout << "Vlera absolute e integjerit: " << absolute << " eshte " << numri << endl;
+
+	return 0;
+}
