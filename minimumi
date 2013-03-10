@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int min, y2, y3, y4, y5;
+
+	cout << "Vlera e pare: ";
+	cin >> min;
+
+	cout << "Vlera e dyte: ";
+	cin >> y2;
+
+	cout << "Vlera e trete: ";
+	cin >> y3;
+
+	cout << "Vlera e katert: ";
+	cin >> y4;
+
+	cout << "Vlera e peste: ";
+	cin >> y5;
+
+	cout<<endl;
+
+	if(y2 <= min) min = y2;
+	if(y3 <= min) min = y3;
+	if(y4 <= min) min = y4;
+	if(y5 <= min) min = y5;
+
+
+	cout << "Numri minimal qe eshte dhene: " << min << endl;
+
+	return 0;
+}
