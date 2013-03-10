@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main () 
+{
+
+  int n;
+
+	cout << "Vendos vleren Decimale: ";
+	cin >> n;
+	cout << endl;
+
+	cout << "Vlera Heksadecimale: " << hex << n << endl;
+	cout << "Vlera Octale: " << oct << n << endl;
+	
+	return 0;
+}
