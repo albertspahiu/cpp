@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std ;
+
+int main()
+{
+  
+	int tmp1;
+	int tmp ;
+	int s=1;
+	
+	int numrat [] = {10, 1, 8, 9, 11, 5, 4, 2, 6, 7};
+
+	for (int j=0 ; j<10 ; j++) {
+	tmp = numrat [j+1];
+	
+	for (int i=j ; i<10 ; i++) {
+		
+	if (tmp > numrat [i])
+	{
+	
+	tmp = numrat [i];
+	s = i;
+	}
+	}
+	
+	tmp1 = numrat [j];
+	numrat [j] = tmp;
+	numrat [s] = tmp1;
+	
+	cout << numrat [j] << endl;
+	}
+	
+	return 0 ;
+}
