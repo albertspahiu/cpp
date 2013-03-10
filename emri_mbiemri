@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+
+  char Emri[20], Mbiemri[20];
+
+	cout << "Kush jeni, ju lutem? ";
+	cin >> Emri >> Mbiemri;
+	cout << endl;
+
+	cout << "Mire se vini: " << Emri << " " << Mbiemri << endl;
+
+	return 0;
+}
