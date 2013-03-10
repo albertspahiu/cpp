@@ -20,7 +20,7 @@ int main()
 
 	cout << endl;
 
-	shuma = double (shuma) / 6;
+	shuma = double (shuma) / 5;
 
 	cout << "Vlera mesatare: " << shuma << endl;
 
