@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int max, x1, x2, x3, x4, x5;
+
+	cout << "Vlera e pare: ";
+	cin >> max;
+
+	cout << "Vlera e dyte: ";
+	cin >> x2;
+
+	cout << "Vlera e trete: ";
+	cin >> x3;
+
+	cout << "Vlera e katert: ";
+	cin >> x4;
+
+	cout << "Vlera e peste: ";
+	cin >> x5;
+
+	cout << endl;
+
+	if(x2>=max ) max = x2;
+	if(x3>=max ) max = x3;
+	if(x4>=max ) max = x4;
+	if(x5>=max ) max = x5;
+
+	cout << "Numri maksimal qe eshte dhene eshte: " << max << endl;
+
+	return 0;
+
+}
