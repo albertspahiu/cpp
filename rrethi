@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+  double pi = 3.14159;
+	double r, s, p;
+
+	cout << "Rrezja e Rrethit: ";
+	cin >> r;
+	cout << endl;
+
+	s = pi * r * r;
+	
+	cout << "Siperfaqja e Rrethit: " << s << endl;
+
+	p = 2 * pi * r;
+	
+	cout << "Perimetri i Rrethit: " << p << endl;
+
+return 0;
+}
