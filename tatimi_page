@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+
+int main() 
+{ 
+  double teArdhurat;
+  double totalTatime = 0;
+  
+  cout << "Paga Bruto: ";
+  cin >> teArdhurat;
+  cout << endl;
+
+  if (teArdhurat <= 80.00)
+  {
+    cout << "0.00 - 80.00 = 0.00" << endl;
+	  cout << "Total Tatime = " << totalTatime << endl << endl;
+	  cout << "Paga Neto: " << teArdhurat - totalTatime << endl;
+  }
+  else if (teArdhurat <= 250.00) 
+  {
+	  totalTatime = (teArdhurat - 80.00) * 0.04;
+	  cout << "0.00 - 80.00 = 0.00" << endl;
+	  cout << "80.00 - 250.00 = "<< totalTatime << endl;
+  	  cout << "Total Tatime = "<< totalTatime << endl << endl;
+	  cout << "Paga Neto: " << teArdhurat - totalTatime << endl;
+  }
+  else if (teArdhurat <= 450.00)
+  {
+	  totalTatime = (170.00 * 0.04) + ((teArdhurat - 250.00) * 0.08);
+	  cout << "0.00 - 80.00 = 0.00" << endl;
+	  cout << "80.00 - 250.00 = " << 170.00 * 0.04 << endl;
+	  cout << "250.00 - 450.00 = " << (teArdhurat - 250.00) * 0.08 << endl;
+	  cout << "Total Tatime = " << totalTatime << endl << endl;
+	  cout << "Paga Neto: " << teArdhurat - totalTatime << endl;
+  }
+  else
+  {
+	  totalTatime = (170.00 * 0.04) + (250.00 * 0.08) + ((teArdhurat - 450.00) * 0.10);
+	  cout << "0.00 - 80.00 = 0.00" << endl;
+	  cout << "80.00 - 250.00 = " << 170.00 * 0.04 << endl;
+	  cout << "250.00 - 450.00 = " << 250.00 * 0.08 << endl;
+	  cout << "mbi 450 = " << (teArdhurat - 450.00) * 0.10 << endl;
+      cout << "Total Tatime = " << totalTatime << endl << endl;
+	  cout << "Paga Neto: " << teArdhurat - totalTatime << endl;
+  }
+
+  return 0; 
+}
