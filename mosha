@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int mosha;
+	cout << "Mosha e juaj: ";
+	cin >> mosha;
+	cout << endl;
+
+	if (mosha < 18)
+	{
+	cout << "Ju jeni i/e ri/re" << endl;
+	}
+		
+	else if (mosha >= 18 && mosha <= 30)
+	{
+	cout << "Ju jeni ende i/e ri/re" << endl;
+	}
+		
+	else if (mosha > 30 && mosha <= 50)
+	{
+	cout << "Ju jeni ende i/e ri/re, mos u shqetesohuni" << endl;
+	}
+		
+	else 
+	{
+	cout << "Eshte koha per t'u shqetesuar" << endl;
+	}
+
+	return 0;
+}
