@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+  int lista [5];
+	double shuma = 0;
+	int shuma1 = 0;
+	
+	for (int i=0; i<5; i++) {
+	
+	cout << "Nota_" << i << ": ";
+	cin >> lista [i];
+	
+	shuma = shuma + lista [i];
+	shuma1 = shuma1 + lista [i];
+	}
+
+	cout << endl;
+
+	shuma = double (shuma) / 6;
+
+	cout << "Vlera mesatare: " << shuma << endl;
+
+	cout << "Vlera totale: " << shuma1 << endl;
+
+	int tmp;
+
+	tmp = lista [0];
+	
+	for (int i=0; i<5; i++) {
+	
+	if (tmp > lista [i])
+		tmp = lista [i];
+	}
+
+	cout<< "Nota me e vogel e dhene eshte: " << tmp << endl;
+	
+	return 0;
+}
