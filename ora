@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int ora;
+
+	cout << "Sa eshte ora? ";
+	cin >> ora;
+	cout << endl;
+
+	if (ora < 12){
+	cout << "Miremengjes" << endl;
+	}
+	
+	else if (ora >= 12 && ora <= 18) {
+	cout << "Miredita" << endl;
+	}
+
+	else {
+	cout << "Mirembrema" << endl;
+	}
+
+	return 0;
+}
