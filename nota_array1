@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+  
+	int nota [5];
+	int i;
+	int shuma = 0;
+	double mesatare;
+
+	for (i=1; i<=5 ; i++) {
+		
+	cout << "Nota_" << i << ": ";
+	cin >> nota [i];
+	{
+
+	shuma = shuma + nota [i];
+	cout << "Shuma e notave eshte: " << shuma << endl << endl;
+	}
+	
+	}
+
+	mesatare = shuma / 5;
+	cout << "Vlera mesatare: " << mesatare << endl;
+
+	return 0;
+}
