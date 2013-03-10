@@ -5,7 +5,7 @@ int main()
 {
   int sh;
 
-	cout << "Shumefishi 3 ose 5: ";
+	cout << "Shumefishi i 3 ose 5: ";
 	cin >> sh;
 	cout << endl;
 
