@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double ore, para, pagesa;
+
+	cout << "Oret qe keni punuar: ";
+	cin >> ore;
+	
+	cout << "Pagesa per ore: ";
+	cin >> para;
+	cout << endl;
+
+	pagesa = ore * para;
+
+	cout << "Kete jave do te paguheni " << pagesa << " euro" << endl;
+
+	return 0;
+}
