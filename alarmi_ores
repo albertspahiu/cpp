@@ -1,0 +1,58 @@
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+
+int main(){
+  unsigned int ora;
+	unsigned int minuta;
+	unsigned int ora_alarmit;
+	unsigned int minuta_alarmit;
+
+	cout<< "Jepni oren momentale: ";
+	cin >> ora;
+	
+	cout << "Jepni minuten momentale: ";
+	cin >> minuta;
+	cout << "Jepni oren e alarmit: ";
+	cin>> ora_alarmit;
+	cout << "Jepni minuten e alarmit: ";
+	cin >> minuta_alarmit;
+	cout << endl << endl;
+
+	cout << "Ora e dhene: " << ora << ":" << minuta << endl;
+	cout << "Alarmi i dhene: " <<ora_alarmit<< ":"<< minuta_alarmit << endl;
+	
+	int mini;
+	int oraa;
+	
+	if(minuta_alarmit>minuta) {mini = minuta_alarmit - minuta; oraa=ora_alarmit-ora;}
+	else { 
+		mini = 60 - (minuta - minuta_alarmit);
+		if(ora < ora_alarmit) oraa = (ora_alarmit-ora)-1;
+		else{ 
+			oraa= ora_alarmit-ora;
+		}
+	}
+	cout << "Alarmi pas: " << oraa << " or‰ dhe " << mini << "minuta" << endl<< endl;
+
+	unsigned int ora_min = (ora *60) + minuta;
+	unsigned int ora_alarmit_min = (ora_alarmit*60) + minuta_alarmit;
+
+	while(ora_min < ora_alarmit_min){
+		for(int i=0;i<=60;i++){
+			if(i==60)ora_min++;
+			Sleep(1000);
+			cout <<".";
+		}
+		cout << "\n kane mbetur edhe : "<< (ora_alarmit_min - ora_min) << " minuta." << endl;
+	}
+
+	if(ora_min == ora_alarmit_min){
+		for(;;){
+			char c=rand();
+			cout << c;
+		}
+	}
+
+	return 0;
+}
