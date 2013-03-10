@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double k = 0;
+	double c = 0;
+
+	cout << "Vlera ne Celcius: ";
+	cin >> c;
+	cout << endl;
+
+	k = c + 273.15;
+
+	cout << "Vlera ne Kelvin eshte: " << k << endl;
+
+	return 0;
+}
