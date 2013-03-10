@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int s, l, w;
+	int shtesa=0;
+
+	cout << "Kufiri i shpjetesise: ";
+	cin >> s;
+	
+	cout << "Shpejtesia e automobilit: ";
+	cin >> l;
+	cout << endl;
+
+	if(l <= 59)
+	
+	cout << "Shpejtesia eshte normale.";
+	
+	if(l>60 && l<180) 
+	{
+	
+	for(int i=s; i<l ; i++) shtesa++;
+	
+	w = 30 + shtesa;
+	cout << "Denimi: " +w;
+	}
+
+	if(l >= 180)
+	cout << "Denimi eshte 200 euro!" << endl;
+	return 0;
+}
