@@ -3,17 +3,18 @@ using namespace std;
 
 int main()
 {
-  int sh;
 
-	cout << "Shumefishi i 3 ose 5: ";
-	cin >> sh;
-	cout << endl;
+	int shuma=0;
 
-	for (int i = 0; i < 1000; i++) {
-	if (i % 3 == 0 || i % 5 == 0)
+	for(int i=1; i<=1000; i++){
+	if( i%3 ==0 || i%5 ==0) {
 
 	cout << i << ", ";
+
+	shuma += i;
 	}
-	
+}
+	cout << endl << "Shuma e numrave: "<< shuma << endl;
+
 	return 0;
 }
