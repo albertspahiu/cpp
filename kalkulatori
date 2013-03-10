@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  double a, b;
+
+	cout << "Vlera e pare: ";
+	cin >> a;
+	cout << "Vlera e dyte: ";
+	cin >> b;
+	cout << endl;
+
+	cout << "Mbledhja: " << a+b << endl;
+	cout << "Zbritja: " << a-b << endl;
+	cout << "Prodhimi: " << a*b << endl;
+	cout << "Pjestimi: " << a/b << endl;
+
+	return 0;
+}
