@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std;
+
+int main()
+{
+  int nota;
+	
+	cout << "Jepni noten prej 1 deri 5: " ;
+	cin >> nota;
+	cout << "----------------------------\n";
+
+	if (nota == 1) 
+	cout << "Dobet" << endl;
+	
+	else if (nota == 2) 
+	cout << "Mjaftueshem" << endl;
+	
+	else if (nota == 3) 
+	cout << "Mire" << endl;
+	
+	else if (nota == 4) 
+	cout << "Shume mire" << endl;
+	
+	else if (nota == 5) 
+	cout << "Shkelqyeshem" << endl;
+	
+	else 
+	cout << "Gabim! Nota duhet te jete ne mes 1 dhe 5" << endl;
+
+	return 0;
+}
