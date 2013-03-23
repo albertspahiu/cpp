@@ -1,0 +1,75 @@
+// Destruktoret
+#include <iostream>
+#include <string>
+using namespace std;
+
+class njeriu
+{
+  private: 
+		string emri;
+		string mbiemri;
+		int mosha;
+		char gjinia;
+		double gjatesia;
+
+	public:
+		void vendosVlerat(string, string, int, char, double);
+		void printo();
+		njeriu();
+		~njeriu();
+};
+
+void main()
+{
+	njeriu fusha [3];
+	string e, m;
+	int mo;
+	char gjinia;
+	double gjatesia;
+
+	for (int i=0; i<3; i++)
+	{
+		cout << "Emri, mbiemri, mosha, gjinia, gjatesia: " << i;
+		cin >> e >> m >> mo >> gjatesia >> gjinia;
+		fusha [i].vendosVlerat(e, m, mo, gjinia, gjatesia);
+	}
+
+	for (int i=0; i<3; i++)
+	{
+		fusha[i].printo();
+	}
+
+	system("pause");
+}
+
+njeriu :: njeriu()
+{
+	emri = "Nuk ekziston";
+	mbiemri = "Nuk ekziston";
+	mosha = 0;
+	gjinia = '-';
+	gjatesia = 0;
+}
+
+njeriu :: ~njeriu()
+{
+	//liro memorien - javen tjeter
+}
+void njeriu :: printo()
+{
+	cout << "Emri: " << emri << endl;
+	cout << "Mbiemri: " << mbiemri << endl;
+	cout << "Mosha: " << mosha << " vjeq/e" << endl;
+	cout << "Gjinia: " << gjinia << endl;
+	cout << "Gjatesia: " << gjatesia << endl;
+	cout << endl;
+}
+
+void njeriu :: vendosVlerat(string e, string m, int mo, char gj, double gjt)
+{
+	emri = e;
+	mbiemri = m;
+	mosha = mo;
+	gjinia = gj;
+	gjatesia = gjt;
+}
