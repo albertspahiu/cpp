@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void main()
+{
+  int *p;
+	int a;
+	a = 5;
+	p = &a;
+
+	cout << a << endl;
+	cout << &a << endl;
+
+	cout << p << endl;
+	cout << &p << endl;
+	cout << *p << endl;
+	
+	system("pause");
+}
