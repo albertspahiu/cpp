@@ -1,0 +1,49 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class njeriu
+{
+  private: 
+		string emri;
+		string mbiemri;
+		int mosha;
+		char gjinia;
+		double gjatesia;
+
+	public:
+		void vendosVlerat(string, string, int, char, double);
+		void printo();
+};
+
+void main()
+{
+	njeriu a, b;
+
+	a.vendosVlerat("Albert", "Spahiu", 27, 'M', 1.87);
+	b.vendosVlerat("Festa", "Celina", 26, 'F', 1.75);
+	
+	a.printo();
+	b.printo();
+
+	system("pause");
+}
+
+void njeriu :: printo()
+{
+	cout << "Emri: " << emri << endl;
+	cout << "Mbiemri: " << mbiemri << endl;
+	cout << "Mosha: " << mosha << " vjeq/e" << endl;
+	cout << "Gjinia: " << gjinia << endl;
+	cout << "Gjatesia: " << gjatesia << endl;
+	cout << endl;
+}
+
+void njeriu :: vendosVlerat(string e, string m, int mo, char gj, double gjt)
+{
+	emri = e;
+	mbiemri = m;
+	mosha = mo;
+	gjinia = gj;
+	gjatesia = gjt;
+}
